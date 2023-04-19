@@ -48,6 +48,7 @@ STEP 4 - REVISE ORIGINAL FILE
 ![Load File Creator](https://user-images.githubusercontent.com/100732722/233169038-51ebcc40-bc41-4a31-b8c4-53154f893022.png)
 
 Here I have created a formula....
-        [cash in IRS] + [cash in CDS] = [SUM Cash Amount in E820]. 
+       
+       [cash in IRS] + [cash in CDS] = [SUM Cash Amount in E820]. 
 
 This means if there is a suspense record that does not align with all three data tables AFTER cash has been moved, it will not be included in the cash moves from suspense to full reconciliation and must be evaluated manually. In the results panel at the bottom it will show the correct "Load File" that needs to be submitted for reconciliation. Confidentiality dictates black highlighting in the picture shown. 
