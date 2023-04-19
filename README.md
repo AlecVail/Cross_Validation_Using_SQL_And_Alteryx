@@ -17,4 +17,4 @@ The data table that holds all our suspense records is called "IRS". In this sect
         From db2prod.IRS_PYMT_XREF
         Where IRS_PYMT_XREF_ID in ('HHHH')
 
-I then join all IRS data with my Load File. This blended data is now going to be compared with the 2nd table, the "E820".
+The orange summary tool concatenates all IRS_PYMT_XREF_IDs I need to validate. These cases are then pushed through the dynamic input and replace the 'HHHH' placeholder when the workflow is ran. I then join all IRS data with my Load File. This blended data is now going to be compared with the 2nd table, the "E820".
