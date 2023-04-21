@@ -45,7 +45,7 @@ Next we have the CDS table. CDS is short for "Cash Distribution". This table sho
         From db2prod.CASH_DISTRIBUTION
         Where CASE_NUM in ('XXXX')
         
-Once this section has been completed, we will then create a formula to dictate whether moving cash from a suspense account would be accurate and appropriate.
+Once this section has been completed, we will then create a formula to dictate whether my validation is accurate and appropriate.
         
 STEP 4 - REVISE ORIGINAL FILE
 
