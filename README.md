@@ -19,7 +19,7 @@ The IRS data table is where all the unassigned money is being stored. In this se
         From db2prod.IRS_PYMT_XREF
         Where IRS_PYMT_XREF_ID in ('HHHH')
 
-The orange summary tool (with the Epsilon symbol) concatenates all IRS_PYMT_XREF_IDs I need to validate. These cases are then pushed through the dynamic input and replace the 'HHHH' placeholder when the workflow is ran. I then join all IRS data with my Load File. This blended data is now going to be compared with the 2nd table, the "E820".
+The orange summary tool (with the Epsilon symbol) concatenates all IRS_PYMT_XREF_IDs I need to validate in the Load File. These IDs are then pushed through the dynamic input and replace the 'HHHH' placeholder when the workflow is ran. I then join all the pulled IRS data with my Load File. This blended data is now going to be compared with the 2nd table, the "E820".
 
 STEP 2 - Validate E820
 
@@ -33,7 +33,7 @@ As you can see I have another SQL query on the left (grey circle with book symbo
         And REMIT_DTL_REF_ID in ('APTC','APTCADJ')
         And IDENT_CODE in ('XXXX')
 
-In this section (from left to right) I am cleansing all relevant/irrelevent data and concatenating all policy IDs to be searched into the E820 Query so I pull ONLY the data being validated, not the entire table. I then do a vlookup (purple tool on the far right) to combine the E820 and IRS data together. At this point I now know what each suspense record must look like after cash has been moved and the account is fully reconciled. 
+In this section (from left to right) I am cleansing all relevant/irrelevent data and concatenating all policy IDs to be searched in the E820 Query so I pull ONLY the data being validated, not the entire table of data. I then do a vlookup (purple tool on the far right) to combine the E820 and IRS data together. At this point I know what each insurance policy must total after cash has been moved and the account is fully reconciled. 
 
 STEP 3 - Validate CDS
 
