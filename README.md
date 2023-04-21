@@ -27,7 +27,13 @@ STEP 2 - Validate E820
 
 As you can see I have another SQL query on the left (grey circle with book symbol). This query pulls from the E820 table. The E820 table tells us what all of our policies need to look like when fully reconciled. 
 
-        Select PROD_LVL_OWNING_CARRIER, BILL_PERIOD, DETAIL_CASE_NUM, IDENT_CODE, REMIT_DTL_MONETARY_AMT, cast(ADDED_DATE as Date) as "TS Date"
+        Select PROD_LVL_OWNING_CARRIER, 
+        BILL_PERIOD, 
+        DETAIL_CASE_NUM, 
+        IDENT_CODE, 
+        REMIT_DTL_MONETARY_AMT, 
+        cast(ADDED_DATE as Date) as "TS Date"
+        
         From db2prod.E820_APTC_PAYMENT_DETAIL
         Where STATUS = 'COMPLETE'
         And REMIT_DTL_REF_ID in ('APTC','APTCADJ')
