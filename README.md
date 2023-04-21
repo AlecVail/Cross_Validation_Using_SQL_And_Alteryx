@@ -7,6 +7,8 @@ This is a screenshot of my entire Alteryx workflow sectionalized into three diff
 
 ![image](https://user-images.githubusercontent.com/100732722/233162092-fa56197b-217b-4dfc-83d2-2c2dbf2192f5.png)
 
+Side Note: I receive an excel file of all the Insurance Policies that need money assigned. This file is called a "Load File". I attach this Load File of initial data to the beginning of my workflow on the left and this is where we will begin...
+
 STEP 1 - Validate IRS Table
 
 ![IRS](https://user-images.githubusercontent.com/100732722/233165782-bc7f753e-3000-4837-8736-810dc37f3464.png)
