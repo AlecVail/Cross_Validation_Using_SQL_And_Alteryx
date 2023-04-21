@@ -41,9 +41,20 @@ STEP 3 - Validate CDS
 
 Next we have the CDS table. CDS is short for "Cash Distribution". This table shows us the detailed billing of each account/policy i.e. How much it was billed, when it was billed, how much the account collected, adjusted, net amount, etc.. Now we must confirm that when we move the money, the collected amount will match the amount shown in the E820 (the previous table). I then repeat the same steps as the previous section; Cleanse, concatenate, pull data from the table, and join the CDS data with my Load File, IRS, and E820 data.
 
-        Select *
+        Select 
+        CASE_NUM as "Case",
+        BILL_PERIOD as "BP",
+        BILLED_AMOUNT as "Billed",
+        COLLECTED_AMOUNT as "Collected",
+        ADJUSTMENT_AMOUNT as "Adjusted",
+        (BILLED_AMOUNT + ADJUSTMENT_AMOUNT) - COLLECTED_AMOUNT as "Net",
+        Carrier,
+        CAST(REVISED_TS AS DATE) "TIMESTAMP",
+        PREM_FEE_TYPE as "Type"
+        
         From db2prod.CASH_DISTRIBUTION
         Where CASE_NUM in ('XXXX')
+        And Prem_Fee_Type = 'SB'
         
 Once this section has been completed, we will then create a formula to dictate whether my validation is accurate and appropriate.
         
