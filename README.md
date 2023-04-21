@@ -11,7 +11,7 @@ STEP 1 - Validate IRS Table
 
 ![IRS](https://user-images.githubusercontent.com/100732722/233165782-bc7f753e-3000-4837-8736-810dc37f3464.png)
 
-The data table that holds all our suspense records is called "IRS". In this section of the workflow, on the left, you can see a grey circle with an open-book symbol. That tool is a SQL query that pulls all records from the IRS table that fit the criteria in my previously made "Load File".
+The data table that holds all our money that isn't assigned to anything is called "IRS". In this section of the workflow, on the left, you can see a grey circle with an open-book symbol. That tool is a SQL query that pulls all records from the IRS table that fit the criteria of my analysis.
 
         Select *
         From db2prod.IRS_PYMT_XREF
