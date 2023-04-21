@@ -1,7 +1,9 @@
 # Mining-Data-with-SQL-and-Alteryx
 Wipro Ltd. - Suspense Account Reconciliation
 
-This is a screenshot of my entire workflow sectionalized into three different categories of validation: IRS, E820, CDS
+If a company does not have a reconciled ledger, that looks bad. So we must identify money that is not assigned to anything, and assign it to something to make it reconciled. In this case our "anything" and "somethings" are Insurance Policies of individuals like you and I. I have to reconcile the ledgers of some of the largest health insurance companies in the US which means I have to analyze data sets in the hundreds of millions! Therefore, I automate my analysis using Alteryx...
+
+This is a screenshot of my entire Alteryx workflow sectionalized into three different categories of validation: IRS, E820, CDS
 
 ![image](https://user-images.githubusercontent.com/100732722/233162092-fa56197b-217b-4dfc-83d2-2c2dbf2192f5.png)
 
