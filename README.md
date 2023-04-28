@@ -1,4 +1,4 @@
-# Mining-Data-with-SQL-and-Alteryx
+# Mining_Data_With_SQL_And_Alteryx
 Wipro Ltd. - Suspense Account Reconciliation
 
 If a company does not have a reconciled ledger, that looks bad. So we must identify money that is not assigned to anything, and assign it to something to make it reconciled. In this case our "anything" and "somethings" are Insurance Policies of individuals like you and I. I have to reconcile the ledgers of some of the largest health insurance companies in the US which means I have to analyze data sets in the hundreds of millions! Therefore, I automate my analysis using Alteryx...
