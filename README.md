@@ -19,7 +19,7 @@ The IRS data table is where all the unassigned money is being stored. In this se
         Where IRS_PYMT_XREF_ID in ('HHHH')
         And Cash_Status = 'C'
 
-The orange summary tool (with the Epsilon symbol) concatenates all IRS_PYMT_XREF_IDs I need to validate in the Load File. These IDs are then pushed through the dynamic input and replace the 'HHHH' placeholder when the workflow is ran. I then join all the pulled IRS data with my Load File. This blended data is now going to be compared with the 2nd table, the "E820".
+The orange summary tool (with the SIGMA symbol) concatenates all IRS_PYMT_XREF_IDs I need to validate in the Load File. These IDs are then pushed through the dynamic input and replace the 'HHHH' placeholder when the workflow is ran. I then join all the pulled IRS data with my Load File. This blended data is now going to be compared with the 2nd table, the "E820".
 
 STEP 2 - Validate E820
 
