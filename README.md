@@ -1,6 +1,6 @@
 # Wipro Ltd. - Suspense Account Reconciliation
 
-If a company does not have a reconciled ledger, that looks bad. So we must identify money that is not assigned to anything, and assign it to something to make it reconciled. In this case our "anything" and "somethings" are Insurance Policies of individuals like you and I. I have to reconcile the ledgers of some of the largest health insurance companies in the US which means I have to analyze data sets in the billions. Therefore, I automate my analysis using Alteryx...
+If a company does not have a reconciled ledger, that looks bad. So we must identify money that is not assigned to *anything*, and assign it to *something* to make it reconciled. In this case our "anything" and "somethings" are Insurance Policies of individuals like you and I. I have to reconcile the ledgers of some of the largest health insurance companies in the US which means I have to analyze data sets in the billions. Therefore, I automate my analysis using Alteryx...
 
 This is a screenshot of my entire Alteryx workflow sectionalized into three different categories of validation: IRS, E820, CDS
 
